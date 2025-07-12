@@ -17,3 +17,8 @@
 	Project type: Native XCode proejct
 	Programming language: Swift
 	UI: SwiftUI
+
+#### Application screenshot:</br>
+<img src="page1.png"  alt="Application screenshot"  width="180"  height="320">
+<img src="page2.png"  alt="Application screenshot"  width="180"  height="320">
+<img src="page3.png"  alt="Application screenshot"  width="180"  height="320">
