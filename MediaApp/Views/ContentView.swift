@@ -40,11 +40,19 @@ struct ContentView: View {
                         ForEach(0..<viewModel.articleList.count, id: \.self) { i in
                             if(i == 0) {
                                 Section {
-                                    CardView(article: viewModel.articleList[i])
+                                    NavigationLink {
+                                        ArticleDetailView(article: viewModel.articleList[i])
+                                    } label: {
+                                        CardView(article: viewModel.articleList[i])
+                                    }
                                 }
                                 .listRowBackground(LinearGradient(gradient: Gradient(colors: [.blue, .green.opacity(0.3)]), startPoint: .top, endPoint: .bottom))
                             } else {
-                                CardView(article: viewModel.articleList[i])
+                                NavigationLink {
+                                    ArticleDetailView(article: viewModel.articleList[i])
+                                } label: {
+                                    CardView(article: viewModel.articleList[i])
+                                }
                             }
                         }
                     }.listRowSpacing(4.0)
